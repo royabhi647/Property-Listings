@@ -2,7 +2,7 @@
 
 A responsive property rental platform built using React. This application provides a seamless experience for users to browse property listings, filter based on criteria, manage bookings, and complete the checkout process.
 
-## [Deployment link](https://zomato-weather.vercel.app/)
+## [Deployment link](https://property-listings-lovat.vercel.app/)
 
 ## Features
 
