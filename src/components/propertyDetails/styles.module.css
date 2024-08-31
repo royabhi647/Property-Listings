@@ -1,0 +1,148 @@
+.propertyContainer {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 20px;
+   font-family: Arial, sans-serif;
+   margin-top: 24px;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+.titleContainer h2 {
+   font-size: 25px;
+   font-weight: 500;
+   margin: 0;
+   color: #3b4351 !important;
+}
+
+.titleContainer h3 {
+   font-size: small;
+   color: #3b4351 !important;
+   margin: 10px 0;
+}
+
+.priceContainer h5 {
+   font-size: 22px;
+   color: green;
+   margin: 0;
+   text-align: right;
+}
+
+.priceContainer small {
+   font-size: 14px;
+   color: #777;
+}
+
+.content {
+   display: flex;
+   gap: 30px;
+}
+
+.galleryContainer {
+   flex: 2;
+}
+
+.featuresContainer {
+   flex: 1;
+   background-color: #f9f9f9;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featuresContainer ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.featuresContainer ul li {
+   font-size: 16px;
+   margin-bottom: 10px;
+   position: relative;
+   padding-left: 20px;
+}
+
+.featuresContainer ul li:before {
+   content: '•';
+   position: absolute;
+   left: 0;
+   color: #000;
+}
+
+.featuresContainer ul li:first-of-type:before {
+   color: green;
+}
+
+p {
+   font-size: 14px;
+   color: #333;
+   margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+   .header {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .titleContainer h2 {
+      font-size: 22px;
+   }
+
+   .titleContainer h3 {
+      font-size: 14px;
+   }
+
+   .priceContainer h5 {
+      font-size: 20px;
+      text-align: left;
+   }
+
+   .content {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .galleryContainer,
+   .featuresContainer {
+      flex: 1;
+   }
+
+   .featuresContainer {
+      padding: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .titleContainer h2 {
+      font-size: 20px;
+   }
+
+   .titleContainer h3 {
+      font-size: 12px;
+   }
+
+   .priceContainer h5 {
+      font-size: 18px;
+   }
+
+   .featuresContainer ul li {
+      font-size: 14px;
+   }
+
+   p {
+      font-size: 12px;
+   }
+
+   .propertyContainer {
+      padding: 15px;
+   }
+}
